@@ -2,11 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import Title from "../../../../components/Title";
 import FadeInOnScroll from "../../../../components/AnimatedContainer";
+import BoxProps from "../../../../interfaces/BoxProps";
 
 const Section = styled.section`
   width: 100%;
   padding: 2rem 1rem;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 `;
 
 const TitleContainer = styled.div`
@@ -15,7 +16,7 @@ const TitleContainer = styled.div`
   max-width: 1344px;
 
   @media (max-width: 768px) {
-    justify-content: center;
+    justify-content: center !important;
     padding: 0 1rem;
   }
 `;
@@ -31,6 +32,7 @@ const Container = styled.div`
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
 
   @media (max-width: 768px) {
+    align-items: center !important;
     padding: 0 1.5rem;
     height: auto;
     box-shadow: none;
@@ -42,6 +44,7 @@ const TitleExperience = styled.h5`
   justify-content: flex-start;
 
   @media (max-width: 768px) {
+    align-items: center;
     font-size: 1.1rem;
   }
 `;
@@ -53,7 +56,7 @@ const Subtitle = styled.h6`
   margin: 0 0 1rem 0;
 
   @media (max-width: 768px) {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
   }
 `;
 
@@ -66,14 +69,11 @@ const Description = styled.p`
   margin: 0;
 
   @media (max-width: 768px) {
+    text-align: center;
     font-size: 0.8rem;
     line-height: 1.4;
   }
 `;
-
-interface BoxProps {
-  noBorder?: boolean;
-}
 
 const Box = styled.div<BoxProps>`
   display: flex;
@@ -85,6 +85,7 @@ const Box = styled.div<BoxProps>`
   flex: 1;
 
   @media (max-width: 768px) {
+    align-items: center;
     padding: 3rem 0;
     border-bottom: ${(props) => (props.noBorder ? "none" : "1px solid #E6ECF8")};
   }
@@ -113,7 +114,7 @@ Também fui responsável na criação de Dashboards e plotagem de dados com Powe
         `Responsável no desenvolvimento de aplicações Web, principalmente no estilo Dashboard Admin, utilizando Node e Vue. Atuo no desenvolvimento de API,
 gerenciamento de banco de dados SQL Server e OracleDB e estilizações com CSS e HTML com Bulma e Tailwind.\n
 Muito dos projetos foi também importante a criação de gráficos e tratamento de dados. \n
-Além disso, também utilizo ferramentas como a ORM Prisma e o ExpressJS.`,
+Além disso, utilizo ferramentas como a ORM Prisma e o ExpressJS.`,
     },
   ];
 

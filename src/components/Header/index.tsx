@@ -97,31 +97,45 @@ export default function Header() {
     setMenuOpen(!menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <Container id="header" open={menuOpen}>
-      <Row>
-        <Logo src={Icon} alt="Logo" />
-        <HamburgerMobile open={menuOpen} onClick={toggleMenu} />
-        <Nav open={menuOpen}>
-          <ul>
-            <li>
-              <LinkButton href="#home">Página inicial</LinkButton>
-            </li>
-            <li>
-              <LinkButton href="#about-me">Sobre mim</LinkButton>
-            </li>
-            <li>
-              <LinkButton href="#projects">Projetos</LinkButton>
-            </li>
-            <li>
-              <LinkButton href="#experiences">Experiências</LinkButton>
-            </li>
-            <li>
-              <LinkButton href="#contact">Contato</LinkButton>
-            </li>
-          </ul>
-        </Nav>
-      </Row>
-    </Container>
+    <Row>
+      <Logo src={Icon} alt="Logo" />
+      <HamburgerMobile open={menuOpen} onClick={toggleMenu} />
+      <Nav open={menuOpen}>
+        <ul>
+          <li>
+            <LinkButton href="#home" onClick={closeMenu}>
+              Página inicial
+            </LinkButton>
+          </li>
+          <li>
+            <LinkButton href="#about-me" onClick={closeMenu}>
+              Sobre mim
+            </LinkButton>
+          </li>
+          <li>
+            <LinkButton href="#projects" onClick={closeMenu}>
+              Projetos
+            </LinkButton>
+          </li>
+          <li>
+            <LinkButton href="#experiences" onClick={closeMenu}>
+              Experiências
+            </LinkButton>
+          </li>
+          <li>
+            <LinkButton href="#contact" onClick={closeMenu}>
+              Contato
+            </LinkButton>
+          </li>
+        </ul>
+      </Nav>
+    </Row>
+  </Container>
   );
 }

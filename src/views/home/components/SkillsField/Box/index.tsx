@@ -4,7 +4,6 @@ import Column from "../../Column";
 import ProgrammingColumn from "../../Columns/ProgrammingColumn";
 import TechSkillsColumn from "../../Columns/TechSkillsColumn";
 import SoftSkillsColumn from "../../Columns/SoftSkillsColumn";
-import FadeInOnScroll from "../../../../../components/AnimatedContainer";
 
 const Box = styled.div`
   background-color: #ffffff;
@@ -35,7 +34,6 @@ export default function FieldBox () {
   return (
     <Box>
       <ContentCentered>
-        <FadeInOnScroll threshold={0.1}>
           <Columns>
             <Column>
               <ProgrammingColumn/>
@@ -47,7 +45,6 @@ export default function FieldBox () {
               <SoftSkillsColumn/>
             </Column>
           </Columns>
-        </FadeInOnScroll>
       </ContentCentered>
     </Box>
   );

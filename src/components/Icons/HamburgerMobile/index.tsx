@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import HamburgerProps from "../../../interfaces/HamburgerProps";
 
 const MobileMenu = styled.div`
   display: none;
@@ -32,11 +33,6 @@ const MobileMenu = styled.div`
     display: block;
   }
 `;
-
-interface HamburgerProps {
-  open: boolean;
-  onClick: () => void;
-}
 
 export default function HamburgerMobile({ open, onClick }: HamburgerProps) {
   return (

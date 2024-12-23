@@ -2,19 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import Title from "../../../../components/Title";
 import emailjs from "emailjs-com";
+import EmailJSResponseStatus from "../../../../interfaces/EmailJSResponseStatus";
+import ChangeEvent from "../../../../interfaces/ChangeEvent";
 import { useState } from "react";
-
-interface ChangeEvent {
-  target: {
-    name: string;
-    value: string;
-  };
-}
-
-interface EmailJSResponseStatus {
-  text: string;
-  status: number;
-}
 
 const Section = styled.section`
   width: 100%;
@@ -41,6 +31,10 @@ const FormContainer = styled.div`
   background: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px;
   margin: 5rem auto 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 3rem;
+  }
 `;
 
 const Input = styled.input`
@@ -65,6 +59,16 @@ const TitleContact = styled.label`
   font-size: 1rem;
   margin-bottom: 1rem;
 `;
+
+const Paragraph = styled.p`
+  display: block;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+  max-width: 80rem;
+  margin: auto;
+  line-height: 1.6;
+`
 
 const InputArea = styled.textarea`
   padding: 2rem;
@@ -101,6 +105,7 @@ const Button = styled.button`
   @media only screen and (max-width: 768px) {
     padding: 1rem 3rem;
     font-size: 1.2rem;
+    width: 100%;
   }
 
   &:hover {
@@ -152,7 +157,7 @@ export default function ContactField() {
     <TitleContainer>
       <Title size="2rem">CONTATO</Title>
     </TitleContainer>
-    <p>Sinta-se livre para entrar contato comigo, eu irei entrar em contato quando possível</p>
+    <Paragraph>Sinta-se livre para me enviar uma mensagem, eu irei entrar em contato assim que possível.</Paragraph>
     <FormContainer>
       <form onSubmit={handleSubmit}>
         <Container>
@@ -184,7 +189,7 @@ export default function ContactField() {
             required
             cols={30}
             rows={10}
-            placeholder="Escreva sua mensagem"
+            placeholder="Escreva Sua Mensagem"
           />
         </Container>
         <Button type="submit">Enviar</Button>

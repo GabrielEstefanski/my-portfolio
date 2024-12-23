@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Geometrical from '../../../../images/geometrical.jpg';
 import SitesField from "../../../../components/Icons/SitesField";
+import AnimatedMouse from "../../../../components/AnimatedMouse";
 
 const Section = styled.section`
   display: flex;
@@ -10,7 +11,7 @@ const Section = styled.section`
   flex-direction: column;
   justify-content: center;
   padding: 2rem 1rem;
-  height: 110vh;
+  height: 100vh;
   background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(${Geometrical});
   background-size: cover;
   border-bottom: #dddddd solid 1px;
@@ -87,6 +88,16 @@ const Button = styled.a`
   }
 `;
 
+const DotsContainer = styled.div`
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 export default function PreviewField () {
   return (
     <>
@@ -101,7 +112,10 @@ export default function PreviewField () {
             <ButtonContainer>
               <Button href="#contact">Contato</Button>
             </ButtonContainer>
-          </Container>
+        </Container>
+        <DotsContainer>
+          <AnimatedMouse/>
+        </DotsContainer>
       </Section>
     </>
   )
