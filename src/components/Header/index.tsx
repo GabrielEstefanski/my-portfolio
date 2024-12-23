@@ -2,10 +2,7 @@ import styled from "styled-components";
 import { useState } from "react";
 import Icon from "../../images/programming.png";
 import HamburgerMobile from "../Icons/HamburgerMobile";
-
-interface NavProps {
-  open: boolean;
-}
+import NavProps from "../../interfaces/NavProps";
 
 const Container = styled.header<NavProps>`
   background: #f5f5f5;
@@ -66,13 +63,13 @@ const Nav = styled.nav<NavProps>`
 `;
 
 const LinkButton = styled.a`
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  color: #000;
+  color: #141C3A;
   transition: color 0.2s ease;
 
   &:hover {
-    color: #636363;
+    color: #4a56f9;
   }
 
   @media (min-width: 769px) {
