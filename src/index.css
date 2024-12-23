@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "arch", sans-serif;
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #141C3A;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul.list-unstyled {
+  list-style-type: none;
+}
+
+span {
+  height: 4px;
+  width: 30px;
+  background: white;
+  margin: 5px 0;
+  border-radius: 2px;
+}
+
+header nav {
+  display: none;
+  background: #222222;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  z-index: 1000;
+  width: 100%;
+  font-size: 24px;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+header nav li {
+  list-style: none;
+  display: block;
+}
+
+@media only screen and (min-width: 1024px) {
+  header nav {
+      font-size: 18px;
+      font-size: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .row, .content .row {
+      clear: both;
+      max-width: 1040px;
+      margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 830px) {
+  header {
+      background: #111;
+      height: 90px;
+  }
+}
+
+@media only screen and (min-width: 830px) {
+  header nav {
+      float: right;
+      display: block;
+      font-size: 16px;
+      font-size: 1.6rem;
+      position: static;
+      background: transparent;
+      width: auto;
+  }
+}
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: bottom;
+  background: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "eurostile", sans-serif;
+  font-weight: 800;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #986dff;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content li + li {
+  margin-top: 0.25em;
+}
