@@ -144,11 +144,11 @@ export default function ContactField() {
         "dG55XyFDJioG8I8rQ"
       )
       .then(
-        (response: EmailJSResponseStatus) => {
+        () => {
           setStatus("Mensagem enviada com sucesso!");
         },
         (err: EmailJSResponseStatus) => {
-          setStatus("Ocorreu um erro ao enviar a mensagem.");
+          setStatus("Ocorreu um erro ao enviar a mensagem: " + err.text);
         }
       );
   };

@@ -1,4 +1,5 @@
-import React, { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
+import { ReactNode } from 'react';
 import styled from 'styled-components';
 
 const AnimatedContainer = styled.div`
@@ -12,7 +13,8 @@ const AnimatedContainer = styled.div`
   }
 `;
 
-const FadeInOnScroll = ({ children, threshold = 0.1, className = '' }) => {
+
+const FadeInOnScroll = ({ children, threshold = 0.1, className = '' }: { children: ReactNode, threshold?: number, className?: string }) => {
   const [isVisible, setIsVisible] = useState(false);
   const containerRef = useRef(null);
 

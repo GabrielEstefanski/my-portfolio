@@ -1,4 +1,3 @@
-import React from "react";
 import { ReactNodeProps } from "../../interfaces/ReactNodeProps";
 
 export default function SkillsLists({children}: ReactNodeProps){

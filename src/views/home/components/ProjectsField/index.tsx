@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import LinkIcon from '../../../../components/Icons/Link';
 import SectionApresentation from './Components/SectionApresentation';

@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import Geometrical from '../../../../images/geometrical.jpg';
 import SitesField from "../../../../components/Icons/SitesField";

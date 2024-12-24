@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import DefaultColumns from "../../../../../../components/DefaultColumns";
 import DefaultColumn from "../../../../../../components/DefaultColumn";

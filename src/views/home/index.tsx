@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../../components/Header";
 import PreviewField from "./components/PreviewField";
 import ApresentationField from "./components/ApresentationField";

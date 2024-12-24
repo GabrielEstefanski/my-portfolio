@@ -1,4 +1,3 @@
-import React from "react";
 import PurpleEllipse from "../PurpleEllipse";
 import Icon from "../Icon";
 import SkillsIcon from "../SkillsIconSpan";

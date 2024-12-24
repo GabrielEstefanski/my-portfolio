@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import FieldBox from "./Box";
 import FadeInOnScroll from "../../../../components/AnimatedContainer";

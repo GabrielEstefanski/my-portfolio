@@ -1,4 +1,3 @@
-import React from "react";
 import RoundedCode from "../../../../../components/Icons/RoundedCode";
 import Paragraph from "../../Paragraph";
 import Title from "../../../../../components/Title";

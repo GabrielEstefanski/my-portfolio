@@ -1,4 +1,3 @@
-import React from "react";
 import Title from "../../../../../components/Title";
 import Paragraph from "../../Paragraph";
 import ListTitle from "../../../../../components/ListTitle";
