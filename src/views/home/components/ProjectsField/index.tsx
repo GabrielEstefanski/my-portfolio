@@ -41,7 +41,7 @@ const Article = styled.article`
   @media screen and (min-width: 769px) {
     flex-grow: 1;
   }
-  
+
   @media screen and (min-width: 1024px) {
     flex: none;
     width: 50%;
@@ -62,6 +62,11 @@ const Box = styled.div`
   color: #141c3a;
   display: block;
   padding: 1.25rem;
+
+  @media screen and (max-width: 1023px) {
+    flex: none;
+    width: 100%;
+  }
 
   @media screen and (min-width: 1216px) {
     padding: 60px 35px;

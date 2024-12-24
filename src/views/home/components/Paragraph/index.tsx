@@ -6,6 +6,16 @@ const Paragraph = styled.p`
   @media screen and (min-width: 769px) {
     font-size: 16px;
     height: 100px;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    height: auto;
+    line-height: 1.5;
   }
 `;
 
