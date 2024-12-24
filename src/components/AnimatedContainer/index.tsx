@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const AnimatedContainer = styled.div`
   opacity: 0;
   transform: translateY(-40px);
-  transition: opacity 2.0s ease-out, transform 2.0s ease-out;
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
 
   &.visible {
     opacity: 1;
