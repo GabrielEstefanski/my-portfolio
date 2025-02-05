@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import LinkIcon from '../../../../components/Icons/Link';
 import SectionApresentation from './Components/SectionApresentation';
 import Container from './Components/Container';
-import FadeInOnScroll from '../../../../components/AnimatedContainer';
-
 
 const SectionField = styled.section`
   padding: 5rem 1.5rem;
@@ -92,40 +90,38 @@ export default function ProjectsField() {
     <>
     <SectionApresentation/>
     <SectionField className="projects-field">
-      <FadeInOnScroll threshold={0.1}>
-        <Container className="projects-list">
-          <StartupGrid>
-            <Columns>
-              <Article>
-                <Box>
-                  <BoxTitle>ManagEase</BoxTitle>
-                  <DescriptionBox>Página de administração, com geração de gráficos para companhias e filiais.</DescriptionBox>
-                  <LinkIcon
-                    href="https://www.linkedin.com/posts/gabriel-estefanski_fullstack-projeto-node-activity-7195939791064944640-pHKk?utm_source=share&utm_medium=member_desktop"
-                    text="www.linkedin.com.br"
-                  />
-                </Box>
-              </Article>
-              <Article>
-                <Box>
-                  <BoxTitle>ReelFlix</BoxTitle>
-                  <DescriptionBox>Frontend de streaming baseado em aplicações como a Netflix.</DescriptionBox>
-                  <LinkIcon
-                    href="https://www.linkedin.com/feed/update/urn:li:activity:7232541795115532289/"
-                    text="www.linkedin.com.br"
-                  />
-                </Box>
-              </Article>
-              <Article>
-                <Box>
-                  <BoxTitle>Em construção...</BoxTitle>
-                  <DescriptionBox>Enquanto isso, pegue uma cadeira, sirva-se de um café e acompanhe o progresso deste projeto</DescriptionBox>
-                </Box>
-              </Article>
-            </Columns>
-          </StartupGrid>
-        </Container>
-      </FadeInOnScroll>
+      <Container className="projects-list">
+        <StartupGrid>
+          <Columns>
+            <Article>
+              <Box>
+                <BoxTitle>ManagEase</BoxTitle>
+                <DescriptionBox>Página de administração, com geração de gráficos para companhias e filiais.</DescriptionBox>
+                <LinkIcon
+                  href="https://www.linkedin.com/posts/gabriel-estefanski_fullstack-projeto-node-activity-7195939791064944640-pHKk?utm_source=share&utm_medium=member_desktop"
+                  text="www.linkedin.com.br"
+                />
+              </Box>
+            </Article>
+            <Article>
+              <Box>
+                <BoxTitle>ReelFlix</BoxTitle>
+                <DescriptionBox>Frontend de streaming baseado em aplicações como a Netflix.</DescriptionBox>
+                <LinkIcon
+                  href="https://www.linkedin.com/feed/update/urn:li:activity:7232541795115532289/"
+                  text="www.linkedin.com.br"
+                />
+              </Box>
+            </Article>
+            <Article>
+              <Box>
+                <BoxTitle>Em construção...</BoxTitle>
+                <DescriptionBox>Enquanto isso, pegue uma cadeira, sirva-se de um café e acompanhe o progresso deste projeto</DescriptionBox>
+              </Box>
+            </Article>
+          </Columns>
+        </StartupGrid>
+      </Container>
     </SectionField>
     </>
   );

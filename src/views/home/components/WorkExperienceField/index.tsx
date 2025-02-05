@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Title from "../../../../components/Title";
-import FadeInOnScroll from "../../../../components/AnimatedContainer";
 import BoxProps from "../../../../interfaces/BoxProps";
 
 const Section = styled.section`
@@ -120,20 +119,18 @@ Além disso, utilizo ferramentas como a ORM Prisma e o ExpressJS.`,
   return (
     <>
       <Section id="experiences">
-        <FadeInOnScroll threshold={0.1}>
-          <TitleContainer>
-            <Title size="2rem">Experiências</Title>
-          </TitleContainer>
-          <Container>
-            {experiences.map((experience, index) => (
-              <Box key={index} noBorder={index === experiences.length - 1}>
-                <TitleExperience>{experience.title}</TitleExperience>
-                <Subtitle>{experience.subtitle}</Subtitle>
-                <Description>{experience.description}</Description>
-              </Box>
-            ))}
-          </Container>
-        </FadeInOnScroll>
+        <TitleContainer>
+          <Title size="2rem">Experiências</Title>
+        </TitleContainer>
+        <Container>
+          {experiences.map((experience, index) => (
+            <Box key={index} noBorder={index === experiences.length - 1}>
+              <TitleExperience>{experience.title}</TitleExperience>
+              <Subtitle>{experience.subtitle}</Subtitle>
+              <Description>{experience.description}</Description>
+            </Box>
+          ))}
+        </Container>
       </Section>
     </>
   );

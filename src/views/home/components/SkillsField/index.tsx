@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import FieldBox from "./Box";
-import FadeInOnScroll from "../../../../components/AnimatedContainer";
 
 const Section = styled.section`
   margin-top: -18rem;
@@ -22,11 +21,9 @@ const Container = styled.div`
 export default function SkillsField() {
   return (
     <Section id="skills">
-      <FadeInOnScroll threshold={0.1}>
-        <Container>
-          <FieldBox/>
-        </Container>
-      </FadeInOnScroll>
+      <Container>
+        <FieldBox/>
+      </Container>
     </Section>
   );
 }
