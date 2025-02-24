@@ -92,10 +92,11 @@ const Box = styled.div<BoxProps>`
 export default function WorkExperienceField() {
   const experiences = [
     {
-      title: "Fullstack Developer Interno",
+      title: "Fullstack Developer",
       subtitle: "4SIS - Fevereiro 2021 a Setembro 2021",
       description:
-        `Atuei no desenvolvimento de páginas Web em PHP, JavaScript, HTML e CSS, desenvolvimento de APIs e gerenciamento de banco de dados MySQL.\n`,
+        `Trabalhei no desenvolvimento de páginas web, no estilo de páginas de administração, com CRUDS, login e na criação de APIs integradas com banco de dados,
+desenvolvendo principalmente nas linguagens Javascript, HTML, CSS e PHP.`,
     },
     {
       title: "Data Engineer Interno",
@@ -106,13 +107,13 @@ o agendamento de tarefas.\n
 Também fui responsável na criação de Dashboards e plotagem de dados com PowerBI e HUE e no gerenciamento de banco de dados HiveDB e OracleDB`,
     },
     {
-      title: "Fullstack Developer Jr.",
+      title: "Fullstack Developer.",
       subtitle: "Safran Cabin - Agosto 2023 até o presente",
       description:
-        `Responsável no desenvolvimento de aplicações Web, principalmente no estilo Dashboard Admin, utilizando Node e Vue. Atuo no desenvolvimento de API,
-gerenciamento de banco de dados SQL Server e OracleDB e estilizações com CSS e HTML com Bulma e Tailwind.\n
-Muito dos projetos foi também importante a criação de gráficos e tratamento de dados. \n
-Além disso, utilizo ferramentas como a ORM Prisma e o ExpressJS.`,
+        `Sou responsável por criar ferramentas web robustas e eficientes, focadas principalmente no estilo de páginas de administração, com CRUDs, gráficos, logins e desenvolvimento de APIs.
+Inicialmente, utilizei VueJs para construir interfaces dinâmicas, mas com o tempo, passei a adotar React, buscando a melhor solução para atender às necessidades do projeto.
+Utilizo também NodeJs e Tailwind CSS, com integração a bancos de dados como SQL Server e OracleDB. Em outros projetos específicos, também desenvolvi aplicações em C#, com foco em otimização de processos.
+`,
     },
   ];
 

@@ -16,11 +16,15 @@ export default function TechSkillsColumn(){
       <ListTitle>Conhecimento Técnico:</ListTitle>
       <SkillsLists>
         <li>Design Patterns</li>
+        <li>SOLID, DRY, KISS</li>
+        <li>Testes Unitários</li>
         <li>Solid</li>
         <li>CI/CD</li>
         <li>Jest & Vitest</li>
         <li>Cloud Service</li>
         <li>Banco de Dados</li>
+        <li>WebSockets, SignalR</li>
+        <li>Arquitetura de Software</li>
       </SkillsLists>
       <ListTitle>Metodologia Ágil:</ListTitle>
       <SkillsLists>
